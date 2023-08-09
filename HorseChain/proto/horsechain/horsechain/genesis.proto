@@ -1,0 +1,12 @@
+syntax = "proto3";
+package horsechain.horsechain;
+
+import "gogoproto/gogo.proto";
+import "horsechain/horsechain/params.proto";
+
+option go_package = "github.com/HorseChain/HorseChain/x/horsechain/types";
+
+// GenesisState defines the horsechain module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

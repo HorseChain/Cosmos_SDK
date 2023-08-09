@@ -1,0 +1,7 @@
+syntax = "proto3";
+package horsechain.horsechain;
+
+option go_package = "github.com/HorseChain/HorseChain/x/horsechain/types";
+
+// Msg defines the Msg service.
+service Msg {}
